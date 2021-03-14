@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/jcalendar-1.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/bonecp-0.7.1.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/guava-13.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-api-1.6.6.jar"/>
+	<classpathentry kind="lib" path="lib/slf4j-simple-1.6.6.jar"/>
+	<classpathentry kind="lib" path="lib/classes12.jar"/>
+	<classpathentry kind="lib" path="lib/cmbcm81.jar"/>
+	<classpathentry kind="lib" path="lib/cmbsdk81.jar"/>
+	<classpathentry kind="lib" path="lib/icmsdk81.jar"/>
+	<classpathentry kind="lib" path="db2java.jar"/>
+	<classpathentry kind="lib" path="db2java.zip"/>
+	<classpathentry kind="lib" path="db2jcc_license_cu.jar"/>
+	<classpathentry kind="lib" path="db2jcc.jar"/>
+	<classpathentry kind="lib" path="db2jcc4.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/cmbview81s.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="substance.jar"/>
+	<classpathentry kind="lib" path="trident.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

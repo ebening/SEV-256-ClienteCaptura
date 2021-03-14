@@ -1,0 +1,24 @@
+#plaza.nombre=GUADALAJARA
+
+#DB2 SEVEN
+#db2.url=jdbc:db2://10.160.1.44:50000/SEVEN
+#db2.username=db2admin
+#db2.password=P4ssw0rd
+
+#DB2 ADINFI
+#db2.url=jdbc:db2://200.56.2.154:50000/SEVEN
+db2.url=jdbc:db2://192.168.10.98:50000/SEVEN
+db2.username=db2admin
+db2.password=Passw0rd
+
+#conexion CM SEVEN
+#icm.admin=icmadmin
+#icm.schema=SCHEMA=ICMADMIN
+#icm.library=icmnlsdb
+#icm.password=P4ssw0rd
+
+#conexion CM ADINFI
+icm.admin=icmadmin
+icm.schema=SCHEMA=ICMADMIN
+icm.library=icmnlsdb
+icm.password=Passw0rd

@@ -1,0 +1,103 @@
+	/**
+	 * valida si el campo txtModeda solo tiene 3 digitos
+	 * @return
+	 */
+     private boolean esMonedaValida(){
+        
+        
+	        boolean valida=false;
+	        String MONEDA_PATTERN = "^[A-Za-z]{3}$";
+	        Pattern pattern;
+	        Matcher matcher;
+	     
+	        String monedaTextField=this.txtMoneda.getText();  
+	
+	        if(!monedaTextField.isEmpty()){
+	
+	                        pattern = Pattern.compile(MONEDA_PATTERN);
+	                        matcher = pattern.matcher(monedaTextField);
+	                        valida=matcher.matches();
+	        }
+	        return valida; 
+     }
+
+
+
+	if(this.txtMoneda.getText().isEmpty()){
+					capturaCompleta=false;
+				}else{
+						if(this.esMonedaValida()){
+							this.listaFacturas.get(filaSeleccionada).setMoneda(this.txtMoneda.getText());
+						}else{
+							 message= new Mensaje(BundleManager.getValue(Constants.MESSAGE_BUNDLE,"MSG030"),titulo,1);
+							 this.showMessage(message);
+							 this.txtMoneda.setText("");
+						}
+						
+				}
+
+
+
+//concepto
+
+concepto.setCuenta(result.getString("CONCEPTOFACTURA"));
+
+if(this.defaultComboConcepto.getIndexOf(defaultComboConcepto.getSelectedItem())==0){
+				capturaCompleta=false;
+				this.listaFacturas.get(filaSeleccionada).getConcepto().setDescripcion(null);
+			}else{
+				int index=this.defaultComboConcepto.getIndexOf(defaultComboConcepto.getSelectedItem());
+				String cuenta=listaConceptos.get(index-1).getCuenta();
+				String descripcion=listaConceptos.get(index-1).getDescripcion();
+				
+				this.listaFacturas.get(filaSeleccionada).getConcepto().setCuenta(cuenta);
+				
+				this.listaFacturas.get(filaSeleccionada).getConcepto().setDescripcion(descripcion);
+
+
+
+
+
+
+
+
+	int inedxConcepto=0;
+					if(facturaNueva.getConcepto().getCuenta()!=null ){
+						
+						for(int i=0;i<=this.listaConceptos.size();i++){
+							
+							if(facturaNueva.getConcepto().getCuenta().equals(listaConceptos.get(i).getCuenta())){
+								inedxConcepto=(i+1);
+								break;
+							}
+						}
+						
+					}
+					
+					cbxConcepto.setSelectedIndex(inedxConcepto);
+
+
+
+
+
+
+
+
+			}
+			
+
+
+
+
+
+//monto
+
+if (this.txtMonto.getText().isEmpty()){
+					capturaCompleta=false;
+					this.listaFacturas.get(filaSeleccionada).setMonto("0");
+				}else{
+					String monto=this.txtMonto.getText();
+					String montoReal = monto.replaceAll(",", "");
+					this.listaFacturas.get(filaSeleccionada).setMonto(montoReal);
+					
+				}
